@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crush Proposal</title>
+  <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #ff0066;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.proposal-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ff0066;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ff0066;
+  color: #ffffff;
+}</style></head>
+<body>
+  <header>
+    <h1>Express Your Feelings</h1>
+  </header>
+
+  <section class="proposal-section">
+    <h2>Will you be my crush?</h2>
+    <form id="proposal-form">
+      <label for="your-name">Your Name:</label>
+      <input type="text" id="your-name" name="yourName" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Propose</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+<script type="text/javascript" id="dcoder_script">document.getElementById('proposal-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // You can add logic here to handle the proposal, e.g., sending it to your crush
+  alert('Your proposal has been sent. Fingers crossed!');
+});</script></body></html>
